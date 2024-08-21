@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hussain</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script defer src="script.js"></script>
+</head>
+<body>
+
+	<header>
+		<nav>
+			<a id="logo" href="#">Hussain</a>
+			<ul id="nav-list">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#skills">Skills</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<button id="nav-toggle-btn">&#9776;</button>
+	</header>
+
+	<main>
+		<section id="home">
+			<div class="text-content">
+				<h2>Hi there,</h2>
+				<h1>I am <span id="name">Hussain</span></h1>
+				<h3> Welcome to my portfolio.</h3>
+			</div>
+			<img src="./images/profile-pic.png" alt="profile-picture">
+		</section>
+
+		<section id="about">
+		    <h1>About Me</h1>
+			<div class="text-content">
+		        <p>I’m a recent graduate from Varendra University with a B.Sc. degree in Computer Science and Engineering (CSE), proudly achieving a CGPA of 3.93. I have a strong foundation in software development, particularly in PHP, and I’m passionate about creating efficient and scalable web applications.</p>
+		        <p>Throughout my academic journey, I honed my skills in problem-solving and critical thinking, which I apply to my coding projects. I enjoy working on both frontend and backend development, always striving to write clean, maintainable code.</p>
+		        <p>I am now seeking opportunities where I can leverage my technical skills and contribute to innovative projects. My goal is to continue learning and growing in the field of software engineering, always eager to take on new challenges and expand my expertise.</p>
+		        <p>In my free time, I enjoy exploring the latest tech trends, participating in coding challenges, and working on personal projects that push the boundaries of my knowledge.</p>
+		    </div>
+		</section>
+
+		<section id="skills">
+	        <h1>Skills</h1>
+            <div class="skill-cards">
+                <div class="skill-card">
+                    <h3>HTML & CSS</h3>
+                    <p>Creating beautiful and responsive designs.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>JavaScript</h3>
+                    <p>Building interactive and dynamic web applications.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>PHP</h3>
+                    <p>Server-side scripting and dynamic content management.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>React</h3>
+                    <p>Developing modern, high-performance user interfaces.</p>
+                </div>
+            </div>
+		</section>
+
+		<section id="contact">
+			<h1>Contact</h1>
+            <form class="contact-form" action="submit_form.php" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+		</section>
+	</main>
+
+	<footer>
+        <p>&copy; 2024 Hussain Ahmed. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
