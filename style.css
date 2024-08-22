@@ -47,8 +47,9 @@ header {
 	height: 3rem;
 	box-shadow: 0 0 10px var(--shadow-color);
 	background-color: #fff;
-	position: fixed;
+	position: sticky;
 	width: 100%;
+	top: 0;
 	border-bottom: 1px solid var(--border-color);
 }
 
@@ -98,6 +99,7 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
 	background-color: var(--main-color);
+	animation: width-otf 0.3s linear;
 }
 
 .active {
@@ -106,6 +108,16 @@ nav ul li a:hover::after {
 
 .active::after {
 	background-color: var(--main-color);
+	animation: width-otf 0.3s linear;
+}
+
+@keyframes width-otf {
+	from {
+		width: 0;
+	}
+	to {
+		width: 100%;
+	}
 }
 
 #nav-toggle-btn {
@@ -133,7 +145,6 @@ main {
 }
 
 #home {
-	padding-top: 3rem;
 	min-height: 100vh;
 	display: flex;
 	gap: 2rem;
